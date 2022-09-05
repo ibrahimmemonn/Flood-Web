@@ -2,7 +2,7 @@ import Image from "next/image";
 import React from "react";
 import map from "../../assets/Map.png";
 import { Col, Container, Row } from "react-bootstrap";
-
+import CountUp from "react-countup";
 import { createUseStyles } from "react-jss";
 
 const Banner = () => {
@@ -10,11 +10,12 @@ const Banner = () => {
   return (
     <Container>
       <Row>
-        <Col md={6} style={{ fontFamily: "poppins", marginTop: 250 }}>
+        <Col md={6} className={styles.colDiv}>
           <p className={styles.upperText}>SINDH</p>
 
           <h1 className={styles.mainText}>
-            89,000
+            <CountUp end={89000} duration={1} separator="," />
+
             <br />
             <span style={{ color: "#891717" }}>DEATHS!</span>
           </h1>
@@ -34,8 +35,12 @@ const Banner = () => {
 };
 
 const useStyles = createUseStyles({
-  margin: {},
+  colDiv: {
+    fontFamily: "poppins",
+    marginTop: 250,
+  },
   upperText: {
+    fontWeight: 500,
     fontSize: 35,
     lineHeight: 1,
     marginBottom: 0,
@@ -45,6 +50,11 @@ const useStyles = createUseStyles({
     fontSize: 94,
     fontWeight: 700,
     lineHeight: 1,
+  },
+  "@media (max-width: 720px)": {
+    colDiv: {
+      textAlign: "center",
+    },
   },
 });
 

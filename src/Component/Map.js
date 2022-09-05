@@ -3,7 +3,7 @@ import mapData from "../Component/api/mapData";
 import Highcharts from "highcharts";
 import HighchartsReact from "highcharts-react-official";
 
-require("highcharts/modules/map")(Highcharts);
+// require("highcharts/modules/map")(Highcharts);
 
 class MyMap extends React.Component {
   constructor(props) {

@@ -476,6 +476,11 @@
   "resolved" "https://registry.npmjs.org/core-js-pure/-/core-js-pure-3.25.0.tgz"
   "version" "3.25.0"
 
+"countup.js@^2.2.0":
+  "integrity" "sha512-dQ7F/CmKGjaO6cDfhtEXwsKVlXIpJ89dFs8PvkaZH9jBVJ2Z8GU4iwG/qP7MgY8qwr+1skbwR6qecWWQLUzB8Q=="
+  "resolved" "https://registry.npmjs.org/countup.js/-/countup.js-2.3.2.tgz"
+  "version" "2.3.2"
+
 "cross-spawn@^7.0.2":
   "integrity" "sha512-iRDPJKUPVEND7dHPO8rkbOnPpyDygcDFtWjpeWNCgy8WP2rXcxXL8TskReQl6OrB2G7+UJrags1q15Fudc7G6w=="
   "resolved" "https://registry.npmjs.org/cross-spawn/-/cross-spawn-7.0.3.tgz"
@@ -1779,6 +1784,13 @@
   "resolved" "https://registry.npmjs.org/react-chartjs-2/-/react-chartjs-2-4.3.1.tgz"
   "version" "4.3.1"
 
+"react-countup@^6.3.1":
+  "integrity" "sha512-+Bf1caAZHtmVQ5Jmhe2MZuN1cw1CEP5OdeMph9CBwM5K8DEDGmg00AzcN6fO9XolUhqUfiR0pOEiSyngSrHwig=="
+  "resolved" "https://registry.npmjs.org/react-countup/-/react-countup-6.3.1.tgz"
+  "version" "6.3.1"
+  dependencies:
+    "countup.js" "^2.2.0"
+
 "react-display-name@^0.2.4":
   "integrity" "sha512-I+vcaK9t4+kypiSgaiVWAipqHRXYmZIuAiS8vzFvXHHXVigg/sMKwlRgLy6LH2i3rmP+0Vzfl5lFsFRwF1r3pg=="
   "resolved" "https://registry.npmjs.org/react-display-name/-/react-display-name-0.2.5.tgz"
@@ -1829,7 +1841,7 @@
     "loose-envify" "^1.4.0"
     "prop-types" "^15.6.2"
 
-"react@^16.8.0 || ^17.0.0 || ^18.0.0", "react@^16.8.0 || ^17.0.0-rc.1 || ^18.0.0", "react@^17.0.2 || ^18.0.0-0", "react@^18.2.0", "react@>= 16.8.0 || 17.x.x || ^18.0.0-0", "react@>=0.13", "react@>=0.14.0", "react@>=15.0.0", "react@>=16.0.0", "react@>=16.14.0", "react@>=16.3", "react@>=16.6.0", "react@>=16.8.0", "react@>=16.8.6", "react@>=16.9.0":
+"react@^16.8.0 || ^17.0.0 || ^18.0.0", "react@^16.8.0 || ^17.0.0-rc.1 || ^18.0.0", "react@^17.0.2 || ^18.0.0-0", "react@^18.2.0", "react@>= 16.3.0", "react@>= 16.8.0 || 17.x.x || ^18.0.0-0", "react@>=0.13", "react@>=0.14.0", "react@>=15.0.0", "react@>=16.0.0", "react@>=16.14.0", "react@>=16.3", "react@>=16.6.0", "react@>=16.8.0", "react@>=16.8.6", "react@>=16.9.0":
   "integrity" "sha512-/3IjMdb2L9QbBdWiW5e3P2/npwMBaU9mHCSCUzNln0ZCYbcfTsGbTJrU/kGemdH2IWmB2ioZ+zkxtmq6g09fGQ=="
   "resolved" "https://registry.npmjs.org/react/-/react-18.2.0.tgz"
   "version" "18.2.0"

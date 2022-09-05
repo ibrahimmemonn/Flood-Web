@@ -1,3 +1,4 @@
+import Image from "next/image";
 import React from "react";
 import Button from "react-bootstrap/Button";
 import Container from "react-bootstrap/Container";
@@ -5,6 +6,7 @@ import Form from "react-bootstrap/Form";
 import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
 import NavDropdown from "react-bootstrap/NavDropdown";
+import icon from "../assets/icon.png";
 
 const Header = () => {
   return (
@@ -17,7 +19,7 @@ const Header = () => {
     >
       <Container>
         <Navbar.Brand href="#" style={{ marginRight: 30 }}>
-          Navbar scroll
+          <Image src={icon} />
         </Navbar.Brand>
 
         <Navbar.Toggle aria-controls="navbarScroll" />
@@ -47,7 +49,7 @@ const Header = () => {
                 fontFamily: "Poppins",
               }}
             >
-              FLOOD{" "}
+              FLOOD
             </Nav.Link>
             <Nav.Link
               href="#action1"

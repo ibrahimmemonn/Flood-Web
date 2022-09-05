@@ -4,6 +4,7 @@ import chart from "../../assets/highChart.png";
 import chart2 from "../../assets/highChart2.png";
 import chart3 from "../../assets/highChart3.png";
 import chart4 from "../../assets/highChart4.png";
+import CountUp from "react-countup";
 import { createUseStyles } from "react-jss";
 import Image from "next/image";
 import { ArrowUpOutlined } from "@ant-design/icons";
@@ -25,12 +26,12 @@ const Infography = () => {
           <Col className={styles.colCard}>
             <p style={{ marginBottom: 0 }}>CONFIRMED</p>
             <p style={{ fontSize: 35, marginBottom: 0, fontWeight: 500 }}>
-              167,564
+              <CountUp end={167564} duration={1} separator="," />
             </p>
 
             <p style={{ color: "#B20000" }}>
               <ArrowUpOutlined style={{ padding: 5 }} />
-              4,302
+              <CountUp end={4302} duration={1} separator="," />
             </p>
 
             <Image src={chart} />
@@ -38,35 +39,35 @@ const Infography = () => {
           <Col className={styles.colCard}>
             <p style={{ marginBottom: 0 }}>CONFIRMED</p>
             <p style={{ fontSize: 35, marginBottom: 0, fontWeight: 500 }}>
-              287,000+
+              <CountUp end={287000} duration={1} separator="," />
             </p>
             <p style={{ color: "#1F5DAB" }}>
               {" "}
               <ArrowUpOutlined style={{ padding: 5 }} />
-              6,546
+              <CountUp end={6546} duration={1} separator="," />
             </p>
             <Image src={chart2} />
           </Col>
           <Col className={styles.colCard}>
             <p style={{ marginBottom: 0 }}>CONFIRMED</p>
             <p style={{ fontSize: 35, marginBottom: 0, fontWeight: 500 }}>
-              520,232
+              <CountUp end={520232} duration={1} separator="," />
             </p>
             <p style={{ color: "#62A376" }}>
               <ArrowUpOutlined style={{ padding: 5 }} />
-              4,302
+              <CountUp end={4302} duration={1} separator="," />
             </p>
             <Image src={chart3} />
           </Col>
           <Col className={styles.colCard}>
             <p style={{ marginBottom: 0 }}>CONFIRMED</p>
             <p style={{ fontSize: 35, marginBottom: 0, fontWeight: 500 }}>
-              200,000
+              <CountUp end={200000} duration={1} separator="," />
             </p>
             <p style={{ color: "#EA9161" }}>
               {" "}
               <ArrowUpOutlined style={{ padding: 5 }} />
-              6,546
+              <CountUp end={6546} duration={1} separator="," />
             </p>
             <Image src={chart4} />
           </Col>

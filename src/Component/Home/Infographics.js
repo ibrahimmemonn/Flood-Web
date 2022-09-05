@@ -4,7 +4,7 @@ import icon from "../../assets/icon1.png";
 import icon2 from "../../assets/icon2.png";
 import icon3 from "../../assets/icon3.png";
 import icon4 from "../../assets/icon4.png";
-
+import CountUp from "react-countup";
 import { createUseStyles } from "react-jss";
 import Image from "next/image";
 
@@ -30,7 +30,7 @@ const Infographics = () => {
                 </p>
                 <p style={{ color: "#B20000" }}>Deaths</p>
                 <p style={{ fontSize: 35, marginBottom: 0, fontWeight: 500 }}>
-                  1,600+
+                  <CountUp end={1600} duration={1} />
                 </p>
                 <p style={{ color: "#B20000" }}>Injureds</p>
               </Col>

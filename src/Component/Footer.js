@@ -7,8 +7,9 @@ import Image from "next/image";
 import React from "react";
 import { Col, Container, Row } from "react-bootstrap";
 import logo from "..//assets/logo.png";
-
+import { createUseStyles } from "react-jss";
 const Footer = () => {
+  const styles = useStyles();
   return (
     <>
       <div
@@ -81,7 +82,9 @@ const Footer = () => {
                 NAVIGATE
               </p>
               <p
+                className={styles.footer}
                 style={{
+                  cursor: "pointer",
                   marginTop: 30,
                   fontSize: 15,
                 }}
@@ -89,7 +92,9 @@ const Footer = () => {
                 Home
               </p>
               <p
+                className={styles.footer}
                 style={{
+                  cursor: "pointer",
                   marginTop: 30,
                   fontSize: 15,
                 }}
@@ -97,7 +102,9 @@ const Footer = () => {
                 Flood
               </p>
               <p
+                className={styles.footer}
                 style={{
+                  cursor: "pointer",
                   marginTop: 30,
                   fontSize: 15,
                 }}
@@ -105,7 +112,9 @@ const Footer = () => {
                 Guidlines
               </p>
               <p
+                className={styles.footer}
                 style={{
+                  cursor: "pointer",
                   marginTop: 30,
                   fontSize: 15,
                 }}
@@ -114,7 +123,9 @@ const Footer = () => {
               </p>
 
               <p
+                className={styles.footer}
                 style={{
+                  cursor: "pointer",
                   marginTop: 30,
                   fontSize: 15,
                 }}
@@ -132,11 +143,11 @@ const Footer = () => {
                 FIND US ON
               </p>
               <div
-                style={{ flexDirection: "row", display: "flex", marginTop: 30 }}
+                style={{ flexDirection: "row", display: "flex", marginTop: 20 }}
               >
-                <GooglePlusOutlined style={{ fontSize: 50, marginRight: 20 }} />
-                <FacebookFilled style={{ fontSize: 50, marginRight: 20 }} />
-                <InstagramOutlined style={{ fontSize: 50 }} />
+                <GooglePlusOutlined className={styles.icons} />
+                <FacebookFilled className={styles.icons} />
+                <InstagramOutlined className={styles.icons} />
               </div>
               <p
                 style={{
@@ -147,16 +158,7 @@ const Footer = () => {
               >
                 Subscribe our Newsletter
               </p>
-              <input
-                placeholder="Enter Email"
-                style={{
-                  backroundColor: "red",
-                  border: " none ",
-                  padding: 15,
-                  borderRadius: 25,
-                  width: "100%",
-                }}
-              />
+              <input placeholder="Enter Email" className={styles.input} />
             </Col>
           </Row>
         </Container>
@@ -164,5 +166,25 @@ const Footer = () => {
     </>
   );
 };
-
+const useStyles = createUseStyles({
+  input: {
+    backroundColor: "red",
+    border: " none ",
+    padding: 15,
+    borderRadius: 25,
+    width: "100%",
+  },
+  footer: {
+    "&:hover": {
+      color: "#B20000",
+    },
+  },
+  icons: {
+    fontSize: 50,
+    marginRight: 20,
+    "&:hover": {
+      color: "#B20000",
+    },
+  },
+});
 export default Footer;
