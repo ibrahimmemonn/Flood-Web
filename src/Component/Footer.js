@@ -17,7 +17,7 @@ const Footer = () => {
       >
         <Container>
           <div style={{ paddingTop: 60 }}>
-            <Image src={logo} />
+            <Image src={logo} alt="logo" />
           </div>
           <Row style={{ fontFamily: "poppins", marginTop: 60 }}>
             <Col md={5}>

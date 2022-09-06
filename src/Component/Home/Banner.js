@@ -1,4 +1,3 @@
-import Image from "next/image";
 import React from "react";
 import map from "../../assets/Map.png";
 import { Col, Container, Row } from "react-bootstrap";
@@ -28,7 +27,6 @@ const Banner = () => {
           </div>
         </Col>
         <Col style={{ marginTop: 200 }} lg={6}>
-          {/* <Image src={map} /> */}
           <Map />
         </Col>
       </Row>

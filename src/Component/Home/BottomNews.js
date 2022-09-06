@@ -44,7 +44,7 @@ const BottomNews = () => {
               >
                 <Col className={styles.colCard} md={6}>
                   <SwiperSlide>
-                    <Image src={news} />
+                    <Image src={news} alt="news" />
                     <p
                       style={{
                         fontSize: 13,
@@ -91,7 +91,7 @@ const BottomNews = () => {
                 </Col>
                 <Col className={styles.colCard} md={6}>
                   <SwiperSlide>
-                    <Image src={news2} />
+                    <Image src={news2} alt="news" />
                     <p
                       style={{
                         fontSize: 13,
@@ -138,7 +138,7 @@ const BottomNews = () => {
                 </Col>
                 <Col className={styles.colCard} md={6}>
                   <SwiperSlide>
-                    <Image src={news3} />
+                    <Image src={news3} alt="news" />
                     <p
                       style={{
                         fontSize: 13,
@@ -185,7 +185,7 @@ const BottomNews = () => {
                 </Col>
                 <Col className={styles.colCard} md={6}>
                   <SwiperSlide>
-                    <Image src={news4} />
+                    <Image src={news4} alt="news" />
                     <p
                       style={{
                         fontSize: 13,
@@ -261,7 +261,7 @@ const BottomNews = () => {
           </div>
           <Row>
             <Col className={styles.colCard} md={4}>
-              <Image src={news} />
+              <Image src={news} alt="news" />
               <p
                 style={{
                   fontSize: 13,
@@ -306,7 +306,7 @@ const BottomNews = () => {
               </p>
             </Col>
             <Col className={styles.colCard} md={4}>
-              <Image src={news2} />
+              <Image src={news2} alt="news" />
               <p
                 style={{
                   fontSize: 13,
@@ -351,7 +351,7 @@ const BottomNews = () => {
               </p>
             </Col>
             <Col className={styles.colCard} md={4}>
-              <Image src={news3} />
+              <Image src={news3} alt="news" />
               <p
                 style={{
                   fontSize: 13,
@@ -396,7 +396,7 @@ const BottomNews = () => {
               </p>
             </Col>
             <Col className={styles.colCard} md={4}>
-              <Image src={news4} />
+              <Image src={news4} alt="news" />
               <p
                 style={{
                   fontSize: 13,

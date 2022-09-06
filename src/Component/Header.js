@@ -20,7 +20,7 @@ const Header = () => {
     >
       <Container>
         <Navbar.Brand href="#" style={{ marginRight: 40 }}>
-          <Image src={icon} />
+          <Image src={icon} alt="icon" />
         </Navbar.Brand>
 
         <Navbar.Toggle aria-controls="navbarScroll" />

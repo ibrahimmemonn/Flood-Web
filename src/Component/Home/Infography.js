@@ -34,7 +34,7 @@ const Infography = () => {
               <CountUp end={4302} duration={1} separator="," />
             </p>
 
-            <Image src={chart} />
+            <Image src={chart} alt="chart" />
           </Col>
           <Col className={styles.colCard}>
             <p style={{ marginBottom: 0 }}>HOUSE DESTROYED</p>
@@ -46,7 +46,7 @@ const Infography = () => {
               <ArrowUpOutlined style={{ padding: 5 }} />
               <CountUp end={6546} duration={1} separator="," />
             </p>
-            <Image src={chart2} />
+            <Image src={chart2} alt="chart" />
           </Col>
           <Col className={styles.colCard}>
             <p style={{ marginBottom: 0 }}>RECOVERED</p>
@@ -57,7 +57,7 @@ const Infography = () => {
               <ArrowUpOutlined style={{ padding: 5 }} />
               <CountUp end={4302} duration={1} separator="," />
             </p>
-            <Image src={chart3} />
+            <Image src={chart3} alt="chart" />
           </Col>
           <Col className={styles.colCard}>
             <p style={{ marginBottom: 0 }}>CRITICAL CASES</p>
@@ -69,7 +69,7 @@ const Infography = () => {
               <ArrowUpOutlined style={{ padding: 5 }} />
               <CountUp end={6546} duration={1} separator="," />
             </p>
-            <Image src={chart4} />
+            <Image src={chart4} alt="chart" />
           </Col>
         </Row>
       </Container>

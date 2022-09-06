@@ -9,7 +9,7 @@ const HighChart = () => {
       type: "areaspline",
     },
     title: {
-      text: "Live Data",
+      text: "District Wise and Year Wise",
       style: {
         fontFamily: "poppins",
         fontSize: "28px",
@@ -32,7 +32,7 @@ const HighChart = () => {
         },
       },
       title: {
-        text: "Rainfall",
+        text: "Casualty (Injured/Death)",
 
         style: {
           color: "#333",
@@ -44,13 +44,12 @@ const HighChart = () => {
     },
     series: [
       {
-        name: ["This Month"],
-        data: [6, 8, 5, 9, 8, 8],
+        name: ["Male"],
+        data: [500, 700, 500, 900, 355, 345],
       },
-
       {
-        name: ["Previous Month"],
-        data: [10, 4, 2, 6, 6, 9],
+        name: ["Female"],
+        data: [800, 500, 700, 400, 577, 654],
       },
     ],
   };

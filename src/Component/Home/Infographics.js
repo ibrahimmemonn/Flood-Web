@@ -14,11 +14,11 @@ const Infographics = () => {
     <>
       <Container>
         <div className={styles.headText}>
-          <h1 style={{ fontWeight: "bold ", fontSize: 50, marginBottom: 0 }}>
-            Pakistan Flood
+          <h1 style={{ fontWeight: "bold ", fontSize: 40, marginBottom: 0 }}>
+            DAMAGE OF INFRASTRUCTURE
           </h1>
           <p style={{ letterSpacing: 10, marginTop: 0, paddingTop: 0 }}>
-            Situation Report
+            and Private Properties
           </p>
         </div>
         <Row style={{ marginTop: 40 }}>
@@ -35,7 +35,7 @@ const Infographics = () => {
                 <p style={{ color: "#B20000" }}>Injureds</p>
               </Col>
               <Col>
-                <Image src={icon} />
+                <Image src={icon} alt="icon" />
               </Col>
             </Row>
           </Col>
@@ -45,61 +45,60 @@ const Infographics = () => {
                 <p style={{ fontSize: 35, marginBottom: 0, fontWeight: 500 }}>
                   325,000
                 </p>
-                <p style={{ color: "#1F5DAB" }}>House Destroyed</p>
+                <p style={{ color: "#1F5DAB" }}>Masjid</p>
                 <p style={{ fontSize: 35, marginBottom: 0, fontWeight: 500 }}>
                   733,000
                 </p>
-                <p style={{ color: "#1F5DAB" }}>House Damaged</p>
+                <p style={{ color: "#1F5DAB" }}>Houses</p>
               </Col>
               <Col>
-                <Image src={icon2} />
-              </Col>
-            </Row>
-          </Col>
-          <Col className={styles.colCard} md={5}>
-            <Row>
-              <Col>
-                <Image src={icon3} />
-              </Col>
-              <Col>
-                <p
-                  style={{
-                    fontSize: 35,
-                    marginBottom: 0,
-                    fontWeight: 500,
-                    marginTop: 50,
-                    marginLeft: 30,
-                  }}
-                >
-                  735,000
-                </p>
-
-                <p style={{ color: "#62A376", marginLeft: 30 }}>
-                  Livestoc lost
-                </p>
+                <Image src={icon2} alt="icon" />
               </Col>
             </Row>
           </Col>
           <Col className={styles.colCard} md={5}>
             <Row>
               <Col style={{ marginTop: 20 }}>
-                <Image src={icon4} />
+                <Image src={icon3} alt="icon" />
               </Col>
-              <Col>
-                <p
-                  style={{
-                    fontSize: 35,
-                    marginBottom: 0,
-                    fontWeight: 500,
-                    marginTop: 50,
-                    marginLeft: 30,
-                  }}
-                >
-                  200,000
+              <Col
+                style={{
+                  marginTop: 20,
+                  textAlign: "right",
+                  marginRight: 30,
+                }}
+              >
+                <p style={{ fontSize: 35, marginBottom: 0, fontWeight: 500 }}>
+                  325,000
                 </p>
-                <p style={{ color: "#EA9161", marginLeft: 30 }}>
-                  Acres of crops affected
+                <p style={{ color: "#62A376" }}>Shop</p>
+                <p style={{ fontSize: 35, marginBottom: 0, fontWeight: 500 }}>
+                  733,000
                 </p>
+                <p style={{ color: "#62A376" }}>Hotels</p>
+              </Col>
+            </Row>
+          </Col>
+          <Col className={styles.colCard} md={5}>
+            <Row>
+              <Col style={{ marginTop: 20 }}>
+                <Image src={icon4} alt="icon" />
+              </Col>
+              <Col
+                style={{
+                  marginTop: 20,
+                  textAlign: "right",
+                  marginRight: 30,
+                }}
+              >
+                <p style={{ fontSize: 35, marginBottom: 0, fontWeight: 500 }}>
+                  325,000
+                </p>
+                <p style={{ color: "#EA9161" }}>Livestoc lost</p>
+                <p style={{ fontSize: 35, marginBottom: 0, fontWeight: 500 }}>
+                  733,000
+                </p>
+                <p style={{ color: "#EA9161" }}>Power Houses</p>
               </Col>
             </Row>
           </Col>
