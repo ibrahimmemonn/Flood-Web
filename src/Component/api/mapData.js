@@ -10,7 +10,7 @@ class mapData {
    * To get the countries of a specific region
    * */
   getWorld = async () => {
-    return await axios.get(this.baseUrl + "countries/pk/pk-all.topo.json");
+    return await axios.get(this.baseUrl + "countries/us/us-all.topo.json");
   };
 }
 

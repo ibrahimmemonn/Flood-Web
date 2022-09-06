@@ -37,7 +37,7 @@ const Infography = () => {
             <Image src={chart} />
           </Col>
           <Col className={styles.colCard}>
-            <p style={{ marginBottom: 0 }}>CONFIRMED</p>
+            <p style={{ marginBottom: 0 }}>HOUSE DESTROYED</p>
             <p style={{ fontSize: 35, marginBottom: 0, fontWeight: 500 }}>
               <CountUp end={287000} duration={1} separator="," />
             </p>
@@ -49,7 +49,7 @@ const Infography = () => {
             <Image src={chart2} />
           </Col>
           <Col className={styles.colCard}>
-            <p style={{ marginBottom: 0 }}>CONFIRMED</p>
+            <p style={{ marginBottom: 0 }}>RECOVERED</p>
             <p style={{ fontSize: 35, marginBottom: 0, fontWeight: 500 }}>
               <CountUp end={520232} duration={1} separator="," />
             </p>
@@ -60,7 +60,7 @@ const Infography = () => {
             <Image src={chart3} />
           </Col>
           <Col className={styles.colCard}>
-            <p style={{ marginBottom: 0 }}>CONFIRMED</p>
+            <p style={{ marginBottom: 0 }}>CRITICAL CASES</p>
             <p style={{ fontSize: 35, marginBottom: 0, fontWeight: 500 }}>
               <CountUp end={200000} duration={1} separator="," />
             </p>
@@ -89,8 +89,11 @@ const useStyles = createUseStyles({
     paddingBottom: 30,
     paddingTop: 30,
     borderRadius: 25,
-
-    boxShadow: "0px 4px 23px 3px rgba(0, 0, 0, 0.15)",
+    cursor: "pointer",
+    boxShadow: "0px 4px 23px 3px rgba(0, 0, 0, 0.1)",
+    "&:hover": {
+      boxShadow: "0px 4px 23px 3px rgba(0, 0, 0, 0.2)",
+    },
   },
 });
 export default Infography;

@@ -16,6 +16,9 @@ const Chart2 = () => {
         fontSize: "28px",
       },
     },
+    credits: {
+      enabled: false,
+    },
     subtitle: {
       text: "compared to average rainfall",
       style: {

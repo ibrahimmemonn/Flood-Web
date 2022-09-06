@@ -4,13 +4,14 @@ import map from "../../assets/Map.png";
 import { Col, Container, Row } from "react-bootstrap";
 import CountUp from "react-countup";
 import { createUseStyles } from "react-jss";
+import Map from "../Map";
 
 const Banner = () => {
   const styles = useStyles();
   return (
     <Container>
       <Row>
-        <Col md={6} className={styles.colDiv}>
+        <Col md={6} lg={6} className={styles.colDiv}>
           <p className={styles.upperText}>SINDH</p>
 
           <h1 className={styles.mainText}>
@@ -26,8 +27,9 @@ const Banner = () => {
             inland lake.
           </div>
         </Col>
-        <Col style={{ marginTop: 200 }}>
-          <Image src={map} />
+        <Col style={{ marginTop: 200 }} lg={6}>
+          {/* <Image src={map} /> */}
+          <Map />
         </Col>
       </Row>
     </Container>
@@ -51,7 +53,7 @@ const useStyles = createUseStyles({
     fontWeight: 700,
     lineHeight: 1,
   },
-  "@media (max-width: 720px)": {
+  "@media (max-width: 992px)": {
     colDiv: {
       textAlign: "center",
     },

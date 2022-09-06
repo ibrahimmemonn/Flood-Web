@@ -19,7 +19,7 @@ const Layout = () => {
       <Infographics />
       <HighChart />
       <Chart2 />
-      <Map />
+      {/* <Map /> */}
       <BottomNews />
     </>
   );

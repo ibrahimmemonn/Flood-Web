@@ -82,7 +82,7 @@ const Infographics = () => {
           </Col>
           <Col className={styles.colCard} md={5}>
             <Row>
-              <Col>
+              <Col style={{ marginTop: 20 }}>
                 <Image src={icon4} />
               </Col>
               <Col>
@@ -120,8 +120,16 @@ const useStyles = createUseStyles({
     padding: 40,
     width: "48%",
     borderRadius: 25,
-
-    boxShadow: "0px 4px 23px 3px rgba(0, 0, 0, 0.15)",
+    cursor: "pointer",
+    boxShadow: "0px 4px 23px 3px rgba(0, 0, 0, 0.1)",
+    "&:hover": {
+      boxShadow: "0px 4px 23px 3px rgba(0, 0, 0, 0.2)",
+    },
+  },
+  "@media (max-width: 720px)": {
+    colCard: {
+      width: "95% ",
+    },
   },
 });
 export default Infographics;

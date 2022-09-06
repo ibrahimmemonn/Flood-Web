@@ -15,7 +15,9 @@ const HighChart = () => {
         fontSize: "28px",
       },
     },
-
+    credits: {
+      enabled: false,
+    },
     yAxis: {
       alternateGridColor: null,
       minorTickInterval: "auto",

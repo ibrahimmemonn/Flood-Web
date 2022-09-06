@@ -5,10 +5,11 @@ import Container from "react-bootstrap/Container";
 import Form from "react-bootstrap/Form";
 import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
-import NavDropdown from "react-bootstrap/NavDropdown";
 import icon from "../assets/icon.png";
+import { createUseStyles } from "react-jss";
 
 const Header = () => {
+  const styles = useStyles();
   return (
     <Navbar
       bg="light"
@@ -18,7 +19,7 @@ const Header = () => {
       style={{ paddingTop: 30 }}
     >
       <Container>
-        <Navbar.Brand href="#" style={{ marginRight: 30 }}>
+        <Navbar.Brand href="#" style={{ marginRight: 40 }}>
           <Image src={icon} />
         </Navbar.Brand>
 
@@ -29,59 +30,19 @@ const Header = () => {
             style={{ maxHeight: "100px" }}
             navbarScroll
           >
-            <Nav.Link
-              href="#action1"
-              style={{
-                marginRight: 30,
-                color: "#272727",
-
-                fontFamily: "Poppins",
-              }}
-            >
+            <Nav.Link href="#action1" className={styles.navbar}>
               STATS
             </Nav.Link>
-            <Nav.Link
-              href="#action1"
-              style={{
-                marginRight: 30,
-                color: "#272727",
-
-                fontFamily: "Poppins",
-              }}
-            >
+            <Nav.Link href="#action1" className={styles.navbar}>
               FLOOD
             </Nav.Link>
-            <Nav.Link
-              href="#action1"
-              style={{
-                marginRight: 30,
-                color: "#272727",
-
-                fontFamily: "Poppins",
-              }}
-            >
+            <Nav.Link href="#action1" className={styles.navbar}>
               GUIDELINES
             </Nav.Link>
-            <Nav.Link
-              href="#action1"
-              style={{
-                marginRight: 30,
-                color: "#272727",
-
-                fontFamily: "Poppins",
-              }}
-            >
+            <Nav.Link href="#action1" className={styles.navbar}>
               WE CARE
             </Nav.Link>
-            <Nav.Link
-              href="#action1"
-              style={{
-                marginRight: 30,
-                color: "#272727",
-
-                fontFamily: "Poppins",
-              }}
-            >
+            <Nav.Link href="#action1" className={styles.navbar}>
               CONTACT
             </Nav.Link>
           </Nav>
@@ -90,7 +51,7 @@ const Header = () => {
               variant="outline-danger"
               style={{ width: 150, fontSize: 15 }}
             >
-              Search
+              Contact
             </Button>
           </Form>
         </Navbar.Collapse>
@@ -98,5 +59,14 @@ const Header = () => {
     </Navbar>
   );
 };
-
+const useStyles = createUseStyles({
+  navbar: {
+    marginRight: 40,
+    color: "#272727",
+    fontFamily: "Poppins",
+    "&:hover": {
+      color: "#B20000",
+    },
+  },
+});
 export default Header;
