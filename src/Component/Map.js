@@ -1,4 +1,4 @@
-import React, { Component } from "react";
+import React, { Component, useState } from "react";
 import { findDOMNode, render } from "react-dom";
 import Highcharts from "highcharts";
 import HighMaps from "highcharts/highmaps";
@@ -42,6 +42,7 @@ class Map extends Component {
       colorAxis: {
         // min: 0,
         minColor: "#B20000",
+
         maxColor: "#ffff",
       },
       legend: {
@@ -60,17 +61,19 @@ class Map extends Component {
           point: {
             events: {
               click: function () {
-                alert(this.name);
+                alert(this.changeName);
               },
             },
           },
         },
       },
+
       series: [
         {
           mapData: usAll,
           data: data,
           name: "Pakistan",
+
           dataLabels: {
             enabled: true,
             format: "{point.name}",

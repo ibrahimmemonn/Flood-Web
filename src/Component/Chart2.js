@@ -46,7 +46,13 @@ const Chart2 = () => {
         color: "gray",
       },
     },
-
+    plotOptions: {
+      series: {
+        pointPadding: 0,
+        borderWidth: 1,
+        pointWidth: 10,
+      },
+    },
     series: [
       {
         name: ["Rainfall in 2022"],

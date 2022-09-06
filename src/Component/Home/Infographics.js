@@ -28,11 +28,11 @@ const Infographics = () => {
                 <p style={{ fontSize: 35, marginBottom: 0, fontWeight: 500 }}>
                   1,000+
                 </p>
-                <p style={{ color: "#B20000" }}>Deaths</p>
+                <p style={{ color: "#B20000" }}>Road</p>
                 <p style={{ fontSize: 35, marginBottom: 0, fontWeight: 500 }}>
                   <CountUp end={1600} duration={1} />
                 </p>
-                <p style={{ color: "#B20000" }}>Injureds</p>
+                <p style={{ color: "#B20000" }}>Bridge</p>
               </Col>
               <Col>
                 <Image src={icon} alt="icon" />

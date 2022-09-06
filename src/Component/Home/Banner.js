@@ -1,18 +1,24 @@
-import React from "react";
+import React, { useState } from "react";
 import map from "../../assets/Map.png";
-import { Col, Container, Row } from "react-bootstrap";
+import { Button, Col, Container, Row } from "react-bootstrap";
 import CountUp from "react-countup";
 import { createUseStyles } from "react-jss";
 import Map from "../Map";
 
-const Banner = () => {
+const Banner = (props) => {
+  // const [myDesc, setMyDesc] = useState("Karachi");
+  // const changeName = (props) => {
+  //   let desc = myDesc;
+  //   desc == "Karachi" ? setMyDesc("Sindh") : setMyDesc("Karachi");
+  // };
+  // console.log(myDesc);
+
   const styles = useStyles();
   return (
     <Container>
       <Row>
         <Col md={6} lg={6} className={styles.colDiv}>
           <p className={styles.upperText}>SINDH</p>
-
           <h1 className={styles.mainText}>
             <CountUp end={89000} duration={1} separator="," />
 
@@ -25,6 +31,8 @@ const Banner = () => {
             miles) wide, turning what were once gricultural fields into a giant
             inland lake.
           </div>
+          {/* <div>{myDesc}</div>
+          <button onClick={changeName}>helllo</button> */}
         </Col>
         <Col style={{ marginTop: 200 }} lg={6}>
           <Map />

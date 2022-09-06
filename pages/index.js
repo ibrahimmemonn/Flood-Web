@@ -15,7 +15,7 @@ export default function Home() {
   return (
     <JssProvider registry={sheets}>
       <div>
-        <title>Flood Pakistan</title>
+        <title>Flood Analysis</title>
         <Layout />
         <Footer />
       </div>

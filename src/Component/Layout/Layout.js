@@ -8,18 +8,18 @@ import Infographics from "../Home/Infographics";
 import Infography from "../Home/Infography";
 
 import Map from "../Map";
+import DistrictList from "../DistrictList";
 
 const Layout = () => {
   return (
     <>
       <Header />
-
       <Banner />
       <Infography />
       <Infographics />
       <HighChart />
       <Chart2 />
-      {/* <Map /> */}
+      <DistrictList />
       <BottomNews />
     </>
   );
