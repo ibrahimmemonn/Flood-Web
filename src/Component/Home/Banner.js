@@ -1,9 +1,8 @@
 import React, { useState } from "react";
-import map from "../../assets/Map.png";
-import { Button, Col, Container, Row } from "react-bootstrap";
+import Map from "../Map";
 import CountUp from "react-countup";
 import { createUseStyles } from "react-jss";
-import Map from "../Map";
+import { Col, Container, Row } from "react-bootstrap";
 
 const Banner = (props) => {
   // const [myDesc, setMyDesc] = useState("Karachi");

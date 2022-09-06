@@ -1,11 +1,11 @@
 import React from "react";
 import Highcharts from "highcharts";
-import HighchartsReact from "highcharts-react-official";
 import { Container } from "react-bootstrap";
+import HighchartsReact from "highcharts-react-official";
+
 const Chart2 = () => {
   const options = {
     colors: ["#B20000", "#000000"],
-
     chart: {
       type: "bar",
     },

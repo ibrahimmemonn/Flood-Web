@@ -1,16 +1,11 @@
-import React, { Component, useState } from "react";
-import { findDOMNode, render } from "react-dom";
-import Highcharts from "highcharts";
+import React, { Component } from "react";
+import { findDOMNode } from "react-dom";
 import HighMaps from "highcharts/highmaps";
-import drilldown from "highcharts/modules/drilldown";
-import map from "highcharts/modules/map";
-import usAll from "./usAll";
+
+import usAll from "./MapData";
 
 class Map extends Component {
   componentDidMount() {
-    // load modules
-    //drilldown(Highcharts);
-
     let data = [
       ["pk-sd", 10],
       ["pk-ba", 11],
@@ -40,9 +35,7 @@ class Map extends Component {
         enableButtons: false,
       },
       colorAxis: {
-        // min: 0,
         minColor: "#B20000",
-
         maxColor: "#ffff",
       },
       legend: {
@@ -61,7 +54,7 @@ class Map extends Component {
           point: {
             events: {
               click: function () {
-                alert(this.changeName);
+                alert(this.name);
               },
             },
           },

@@ -1,14 +1,12 @@
 import React from "react";
-import Chart2 from "../Chart2";
 import Header from "../Header";
-import HighChart from "../HighChart";
+import Chart2 from "../Chart2";
 import Banner from "../Home/Banner";
+import ChartData from "../ChartData";
+import DistrictList from "../DistrictList";
+import Infography from "../Home/Infography";
 import BottomNews from "../Home/BottomNews";
 import Infographics from "../Home/Infographics";
-import Infography from "../Home/Infography";
-
-import Map from "../Map";
-import DistrictList from "../DistrictList";
 
 const Layout = () => {
   return (
@@ -17,7 +15,7 @@ const Layout = () => {
       <Banner />
       <Infography />
       <Infographics />
-      <HighChart />
+      <ChartData />
       <Chart2 />
       <DistrictList />
       <BottomNews />

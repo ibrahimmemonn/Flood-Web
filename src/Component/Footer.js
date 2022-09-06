@@ -1,13 +1,14 @@
+import React from "react";
+import Image from "next/image";
+import logo from "..//assets/logo.png";
+import { createUseStyles } from "react-jss";
+import { Col, Container, Row } from "react-bootstrap";
 import {
   FacebookFilled,
   GooglePlusOutlined,
   InstagramOutlined,
 } from "@ant-design/icons";
-import Image from "next/image";
-import React from "react";
-import { Col, Container, Row } from "react-bootstrap";
-import logo from "..//assets/logo.png";
-import { createUseStyles } from "react-jss";
+
 const Footer = () => {
   const styles = useStyles();
   return (

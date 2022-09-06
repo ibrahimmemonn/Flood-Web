@@ -1,12 +1,12 @@
 import React from "react";
-import { Col, Container, Row } from "react-bootstrap";
+import Image from "next/image";
+import CountUp from "react-countup";
 import icon from "../../assets/icon1.png";
 import icon2 from "../../assets/icon2.png";
 import icon3 from "../../assets/icon3.png";
 import icon4 from "../../assets/icon4.png";
-import CountUp from "react-countup";
 import { createUseStyles } from "react-jss";
-import Image from "next/image";
+import { Col, Container, Row } from "react-bootstrap";
 
 const Infographics = () => {
   const styles = useStyles();
@@ -14,25 +14,21 @@ const Infographics = () => {
     <>
       <Container>
         <div className={styles.headText}>
-          <h1 style={{ fontWeight: "bold ", fontSize: 40, marginBottom: 0 }}>
-            DAMAGE OF INFRASTRUCTURE
-          </h1>
-          <p style={{ letterSpacing: 10, marginTop: 0, paddingTop: 0 }}>
-            and Private Properties
-          </p>
+          <h1 className={styles.mainText}>DAMAGE OF INFRASTRUCTURE</h1>
+          <p className={styles.subText}>and Private Properties</p>
         </div>
         <Row style={{ marginTop: 40 }}>
           <Col className={styles.colCard} md={5}>
             <Row>
               <Col>
-                <p style={{ fontSize: 35, marginBottom: 0, fontWeight: 500 }}>
-                  1,000+
+                <p className={styles.cardNumbers}>
+                  <CountUp end={1000} duration={1} />
                 </p>
-                <p style={{ color: "#B20000" }}>Road</p>
-                <p style={{ fontSize: 35, marginBottom: 0, fontWeight: 500 }}>
+                <p className={styles.cardText}>Road</p>
+                <p className={styles.cardNumbers}>
                   <CountUp end={1600} duration={1} />
                 </p>
-                <p style={{ color: "#B20000" }}>Bridge</p>
+                <p className={styles.cardText}>Bridge</p>
               </Col>
               <Col>
                 <Image src={icon} alt="icon" />
@@ -42,13 +38,9 @@ const Infographics = () => {
           <Col className={styles.colCard} md={5}>
             <Row>
               <Col>
-                <p style={{ fontSize: 35, marginBottom: 0, fontWeight: 500 }}>
-                  325,000
-                </p>
+                <p className={styles.cardNumbers}>325,000</p>
                 <p style={{ color: "#1F5DAB" }}>Masjid</p>
-                <p style={{ fontSize: 35, marginBottom: 0, fontWeight: 500 }}>
-                  733,000
-                </p>
+                <p className={styles.cardNumbers}>733,000</p>
                 <p style={{ color: "#1F5DAB" }}>Houses</p>
               </Col>
               <Col>
@@ -113,6 +105,17 @@ const useStyles = createUseStyles({
     fontFamily: "poppins",
     marginTop: 100,
   },
+  mainText: {
+    fontWeight: "bold ",
+    fontSize: 40,
+    marginBottom: 0,
+  },
+  subText: { letterSpacing: 10, marginTop: 0, paddingTop: 0 },
+  cardNumbers: { fontSize: 35, marginBottom: 0, fontWeight: 500 },
+  cardText: {
+    color: "#B20000",
+  },
+
   colCard: {
     fontFamily: "poppins",
     margin: 10,

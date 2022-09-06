@@ -15,25 +15,8 @@ const BottomNews = () => {
       <Container>
         <div className={styles.first}>
           <div className={styles.topSec}>
-            <p
-              style={{
-                fontSize: 18,
-                marginBottom: 0,
-                marginTop: 10,
-              }}
-            >
-              Happening near you
-            </p>
-            <p
-              style={{
-                fontWeight: 500,
-                marginTop: 0,
-                fontSize: 25,
-                marginTop: 5,
-              }}
-            >
-              Fundraisers in your local area
-            </p>
+            <p className={styles.text}>Happening near you</p>
+            <p className={styles.subText}>Fundraisers in your local area</p>
           </div>
           <Row>
             <Container>
@@ -45,46 +28,13 @@ const BottomNews = () => {
                 <Col className={styles.colCard} md={6}>
                   <SwiperSlide>
                     <Image src={news} alt="news" />
-                    <p
-                      style={{
-                        fontSize: 13,
-                        color: "#B20000",
-                        marginBottom: 0,
-                        marginTop: 10,
-                      }}
-                    >
-                      WEST NEW YORK, NJ
-                    </p>
-                    <p
-                      style={{
-                        fontSize: 20,
-                        fontWeight: 600,
-                        marginTop: 0,
-                        marginBottom: 5,
-                      }}
-                    >
-                      Grief Recovery Fund
-                    </p>
-                    <p
-                      style={{
-                        fontSize: 15,
-                        fontWeight: 300,
-                        marginTop: 0,
-                        marginBottom: 10,
-                      }}
-                    >
+                    <p className={styles.cityText}>WEST NEW YORK, NJ</p>
+                    <p className={styles.cardText}>Grief Recovery Fund</p>
+                    <p className={styles.descText}>
                       Hello, my name is Sumaiya, and I am raising funds for my
                       dear friend An Family with the...
                     </p>
-                    <p
-                      style={{
-                        fontSize: 15,
-                        fontWeight: 500,
-                        color: "#B20000",
-                        marginTop: 0,
-                        marginBottom: 10,
-                      }}
-                    >
+                    <p className={styles.donationText}>
                       98,089 raised . 62 donations
                     </p>
                   </SwiperSlide>
@@ -92,46 +42,15 @@ const BottomNews = () => {
                 <Col className={styles.colCard} md={6}>
                   <SwiperSlide>
                     <Image src={news2} alt="news" />
-                    <p
-                      style={{
-                        fontSize: 13,
-                        color: "#B20000",
-                        marginBottom: 0,
-                        marginTop: 10,
-                      }}
-                    >
-                      LONDON
-                    </p>
-                    <p
-                      style={{
-                        fontSize: 20,
-                        fontWeight: 600,
-                        marginTop: 0,
-                        marginBottom: 5,
-                      }}
-                    >
+                    <p className={styles.cityText}>LONDON</p>
+                    <p className={styles.cardText}>
                       Pakistan Floods Appeal 2022
                     </p>
-                    <p
-                      style={{
-                        fontSize: 15,
-                        fontWeight: 300,
-                        marginTop: 0,
-                        marginBottom: 10,
-                      }}
-                    >
+                    <p className={styles.descText}>
                       As part of the Nimsdai Foundation’s disaster relief
                       programme the charity off…
                     </p>
-                    <p
-                      style={{
-                        fontSize: 15,
-                        fontWeight: 500,
-                        color: "#B20000",
-                        marginTop: 0,
-                        marginBottom: 10,
-                      }}
-                    >
+                    <p className={styles.donationText}>
                       78,089 raised . 47 donations
                     </p>
                   </SwiperSlide>
@@ -139,46 +58,17 @@ const BottomNews = () => {
                 <Col className={styles.colCard} md={6}>
                   <SwiperSlide>
                     <Image src={news3} alt="news" />
-                    <p
-                      style={{
-                        fontSize: 13,
-                        color: "#B20000",
-                        marginBottom: 0,
-                        marginTop: 10,
-                      }}
-                    >
+                    <p className={styles.cityText}>
                       LONDON, GREATER LONDON, UNITED KINGDOM
                     </p>
-                    <p
-                      style={{
-                        fontSize: 20,
-                        fontWeight: 600,
-                        marginTop: 0,
-                        marginBottom: 5,
-                      }}
-                    >
+                    <p className={styles.cardText}>
                       Save Sindh. One Village A Time
                     </p>
-                    <p
-                      style={{
-                        fontSize: 15,
-                        fontWeight: 300,
-                        marginTop: 0,
-                        marginBottom: 10,
-                      }}
-                    >
+                    <p className={styles.descText}>
                       Hi, We are Zain Rafiq (a student at The Ame- rican School
                       in London) a…
                     </p>
-                    <p
-                      style={{
-                        fontSize: 15,
-                        fontWeight: 500,
-                        color: "#B20000",
-                        marginTop: 0,
-                        marginBottom: 10,
-                      }}
-                    >
+                    <p className={styles.donationText}>
                       45,539 raised . 34 donations
                     </p>
                   </SwiperSlide>
@@ -186,46 +76,13 @@ const BottomNews = () => {
                 <Col className={styles.colCard} md={6}>
                   <SwiperSlide>
                     <Image src={news4} alt="news" />
-                    <p
-                      style={{
-                        fontSize: 13,
-                        color: "#B20000",
-                        marginBottom: 0,
-                        marginTop: 10,
-                      }}
-                    >
-                      WEST NEW YORK, NJ
-                    </p>
-                    <p
-                      style={{
-                        fontSize: 20,
-                        fontWeight: 600,
-                        marginTop: 0,
-                        marginBottom: 5,
-                      }}
-                    >
-                      Grief Recovery Fund
-                    </p>
-                    <p
-                      style={{
-                        fontSize: 15,
-                        fontWeight: 300,
-                        marginTop: 0,
-                        marginBottom: 10,
-                      }}
-                    >
+                    <p className={styles.cityText}>WEST NEW YORK, NJ</p>
+                    <p className={styles.cardText}>Grief Recovery Fund</p>
+                    <p className={styles.cardDesc}>
                       Hello, my name is Sumaiya, and I am raising funds for my
                       dear friend An Family with the...
                     </p>
-                    <p
-                      style={{
-                        fontSize: 15,
-                        fontWeight: 500,
-                        color: "#B20000",
-                        marginTop: 0,
-                        marginBottom: 10,
-                      }}
-                    >
+                    <p className={styles.donationText}>
                       98,089 raised . 62 donations
                     </p>
                   </SwiperSlide>
@@ -235,7 +92,7 @@ const BottomNews = () => {
           </Row>
         </div>
       </Container>
-
+      {/* Responsive Code */}
       <Container>
         <div className={styles.second}>
           <div className={styles.topSec}>
@@ -453,9 +310,43 @@ const useStyles = createUseStyles({
   second: {
     display: "none",
   },
+  // HEAD
+  text: {
+    fontSize: 18,
+    marginBottom: 0,
+    marginTop: 10,
+  },
+  subText: {
+    fontWeight: 500,
+    marginTop: 0,
+    fontSize: 25,
+    marginTop: 5,
+  },
+  // CARD
+  cityText: {
+    fontSize: 13,
+    color: "#B20000",
+    marginBottom: 0,
+    marginTop: 10,
+  },
+  cardText: { fontSize: 20, fontWeight: 600, marginTop: 0, marginBottom: 5 },
   topSec: {
     fontFamily: "poppins",
   },
+  descText: {
+    fontSize: 15,
+    fontWeight: 300,
+    marginTop: 0,
+    marginBottom: 10,
+  },
+  donationText: {
+    fontSize: 15,
+    fontWeight: 500,
+    color: "#B20000",
+    marginTop: 0,
+    marginBottom: 10,
+  },
+  // CARD ANIMATION
   swipeCard: {
     cursor: "pointer",
   },

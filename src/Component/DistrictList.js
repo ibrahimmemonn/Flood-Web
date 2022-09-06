@@ -86,9 +86,6 @@ const useStyles = createUseStyles({
     borderRadius: 25,
     cursor: "pointer",
     boxShadow: "0px 2px 15px 3px rgba(0, 0, 0,  0.1)",
-    // "&:hover": {
-    //   boxShadow: "0px 4px 23px 3px rgba(0, 0, 0, 0.2)",
-    // },
   },
 });
 export default DistrictList;

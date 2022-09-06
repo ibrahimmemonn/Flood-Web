@@ -1,7 +1,7 @@
 import Highcharts from "highcharts";
 import HighchartsReact from "highcharts-react-official";
 import { Container } from "react-bootstrap";
-const HighChart = () => {
+const ChartData = () => {
   const options = {
     colors: ["#000000", "#B20000"],
     chart: {
@@ -61,4 +61,4 @@ const HighChart = () => {
   );
 };
 
-export default HighChart;
+export default ChartData;
