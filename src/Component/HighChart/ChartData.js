@@ -1,14 +1,22 @@
 import Highcharts from "highcharts";
 import HighchartsReact from "highcharts-react-official";
 import { Container } from "react-bootstrap";
-const ChartData = () => {
+const ChartData = ({
+  chartType,
+  chartTitle,
+  data,
+  data2,
+  colors,
+  dataTitle,
+  dataTitle2,
+}) => {
   const options = {
-    colors: ["#000000", "#B20000"],
+    colors: colors,
     chart: {
-      type: "areaspline",
+      type: chartType,
     },
     title: {
-      text: "District Wise and Year Wise",
+      text: chartTitle,
       style: {
         fontFamily: "poppins",
         fontSize: "28px",
@@ -17,6 +25,9 @@ const ChartData = () => {
     credits: {
       enabled: false,
     },
+    // xAxis: {
+    //   type: "datetime",
+    // },
     yAxis: {
       alternateGridColor: null,
       minorTickInterval: "auto",
@@ -43,12 +54,12 @@ const ChartData = () => {
     },
     series: [
       {
-        name: ["Male"],
-        data: [500, 700, 500, 900, 355, 345],
+        name: dataTitle,
+        data: data,
       },
       {
-        name: ["Female"],
-        data: [800, 500, 700, 400, 577, 654],
+        name: dataTitle2,
+        data: data2,
       },
     ],
   };

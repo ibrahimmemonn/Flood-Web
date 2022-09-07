@@ -1,8 +1,9 @@
 import Head from "next/head";
 import Image from "next/image";
 import Layout from "../src/Component/Layout/Layout";
+import "antd/dist/antd.css";
 import "bootstrap/dist/css/bootstrap.min.css";
-
+import "swiper/css/effect-cards";
 import "swiper/css";
 import "swiper/css/pagination";
 import styles from "../styles/Home.module.css";

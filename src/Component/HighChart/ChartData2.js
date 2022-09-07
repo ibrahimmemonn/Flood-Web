@@ -2,15 +2,23 @@ import React from "react";
 import Highcharts from "highcharts";
 import { Container } from "react-bootstrap";
 import HighchartsReact from "highcharts-react-official";
-
-const Chart2 = () => {
+const ChartData2 = ({
+  chartType,
+  chartTitle,
+  chartSubTitle,
+  data,
+  data2,
+  colors,
+  dataTitle,
+  dataTitle2,
+}) => {
   const options = {
-    colors: ["#B20000", "#000000"],
+    colors: colors,
     chart: {
-      type: "bar",
+      type: chartType,
     },
     title: {
-      text: "Rainfall in 2022",
+      text: chartTitle,
       style: {
         fontFamily: "poppins",
         fontSize: "28px",
@@ -20,7 +28,7 @@ const Chart2 = () => {
       enabled: false,
     },
     subtitle: {
-      text: "compared to average rainfall",
+      text: chartSubTitle,
       style: {
         fontFamily: "poppins",
         fontSize: "10px",
@@ -55,13 +63,14 @@ const Chart2 = () => {
     },
     series: [
       {
-        name: ["Rainfall in 2022"],
-        data: [9, 8, 7, 9, 5, 8],
+        name: dataTitle,
+
+        data: data,
       },
 
       {
-        name: ["Rainfall in 2021"],
-        data: [6, 4, 5, 6, 3, 6],
+        name: dataTitle2,
+        data: data2,
       },
     ],
   };
@@ -74,4 +83,4 @@ const Chart2 = () => {
   );
 };
 
-export default Chart2;
+export default ChartData2;
