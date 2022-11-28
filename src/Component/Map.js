@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { findDOMNode } from "react-dom";
+// import { findDOMNode } from "react-dom";
 import HighMaps from "highcharts/highmaps";
 
 import usAll from "./MapData";
@@ -81,11 +81,11 @@ class Map extends Component {
       },
     };
 
-    this.chart = new HighMaps["Map"](findDOMNode(this), options);
+    // this.chart = new HighMaps["Map"](findDOMNode(this), options);
   }
 
   componentWillUnmount() {
-    this.chart.destroy();
+    // this.chart.destroy();
   }
 
   render() {
