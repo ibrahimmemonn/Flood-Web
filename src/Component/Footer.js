@@ -48,30 +48,6 @@ const Footer = () => {
                 Ministry of National Health Services Regulations & <br />{" "}
                 Coordination, 3rd Floor Kohsar Block, Islamabad
               </p>
-              <p
-                style={{
-                  fontSize: 15,
-                  marginTop: 30,
-                }}
-              >
-                +92 (51) 9255090
-              </p>
-              <p
-                style={{
-                  fontSize: 15,
-                  marginTop: 30,
-                }}
-              >
-                +92 (51) 9245717
-              </p>
-              <p
-                style={{
-                  fontSize: 15,
-                  marginTop: 30,
-                }}
-              >
-                contact@nhsrc.gov.pk{" "}
-              </p>
             </Col>
             <Col md={3}>
               <p

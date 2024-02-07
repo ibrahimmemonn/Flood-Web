@@ -1,17 +1,10 @@
-import React, { useState } from "react";
+import React from "react";
 import Map from "../Map";
 import CountUp from "react-countup";
 import { createUseStyles } from "react-jss";
 import { Col, Container, Row } from "react-bootstrap";
 
 const Banner = (props) => {
-  // const [myDesc, setMyDesc] = useState("Karachi");
-  // const changeName = (props) => {
-  //   let desc = myDesc;
-  //   desc == "Karachi" ? setMyDesc("Sindh") : setMyDesc("Karachi");
-  // };
-  // console.log(myDesc);
-
   const styles = useStyles();
   return (
     <Container>
@@ -30,8 +23,6 @@ const Banner = (props) => {
             miles) wide, turning what were once gricultural fields into a giant
             inland lake.
           </div>
-          {/* <div>{myDesc}</div>
-          <button onClick={changeName}>helllo</button> */}
         </Col>
         <Col style={{ marginTop: 200 }} lg={6}>
           <Map />

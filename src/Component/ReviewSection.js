@@ -9,7 +9,7 @@ const ReviewSection = () => {
   return (
     <Review
       // FIRST REVIEW DATA
-      firstName="Zeeshan Abro"
+      firstName="Ibrahim Memon"
       firstDate="15 May 2022 at 11:21"
       firstDesc="  The swirling flood waters have damaged or submerged millions
                   of acres of farmland, including part of the prized cotton
@@ -17,7 +17,7 @@ const ReviewSection = () => {
                   about a quarter of the economy. The provinces of Sindh and
                   Balochistan have been the worst hit so far.
                                  of acres of farmland, including part of the prized cotton
-               — With assistance by Zeeshan Abro"
+               — With assistance by Ibrahim Memon"
       firstCity=" Badin Sindh"
       firstImage={news1}
       firstImage2={news2}
