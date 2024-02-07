@@ -4,13 +4,7 @@ import { Avatar, Button, Modal } from "antd";
 import "swiper/css";
 import "swiper/css/effect-cards";
 import { EffectCards } from "swiper";
-import news1 from "../assets/news.jpg";
-import news2 from "../assets/news2.jpg";
-import news3 from "../assets/news3.jpg";
-import news4 from "../assets/news4.jpg";
-import review from "../assets/review.png";
 import review1 from "../assets/review1.png";
-import review2 from "../assets/review2.png";
 import pk from "../assets/pk.png";
 import { Col, Container, Row } from "react-bootstrap";
 import Image from "next/image";
@@ -18,7 +12,6 @@ import { CheckCircleFilled, UserOutlined } from "@ant-design/icons";
 import { createUseStyles } from "react-jss";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faImages } from "@fortawesome/free-regular-svg-icons";
-// import { faImages } from "@fortawesome/free-solid-svg-icons";
 
 const Review = ({
   firstName,
@@ -57,7 +50,18 @@ const Review = ({
             <div className={styles.divPadding}>
               <div className={styles.divFlexRow}>
                 <div style={{ marginTop: 5 }}>
-                  <Avatar size={64} src={<Image src={review1} />} />
+                  <Avatar
+                    size={64}
+                    src={
+                      <Image
+                        width={100}
+                        height={100}
+                        alt="me"
+                        layout="fill"
+                        src={"/images/Avatar.png"}
+                      />
+                    }
+                  />
                 </div>
                 <div style={{ marginLeft: 20 }}>
                   <div className={styles.divFlexRow}>
@@ -141,12 +145,23 @@ const Review = ({
             <div className={styles.divPadding}>
               <div className={styles.divFlexRow}>
                 <div style={{ marginTop: 5 }}>
-                  <Avatar size={64} src={<Image src={review} />} />
+                  <Avatar
+                    size={64}
+                    src={
+                      <Image
+                        width={100}
+                        height={100}
+                        alt="me"
+                        layout="fill"
+                        src={"/images/Avatar.png"}
+                      />
+                    }
+                  />
                 </div>
                 <div style={{ marginLeft: 20 }}>
                   <div className={styles.divFlexRow}>
                     <div>
-                      <p className={styles.mainText}>Naveed Memon</p>
+                      <p className={styles.mainText}>Ibrahim Memon</p>
                     </div>
                     <div>
                       <CheckCircleFilled className={styles.verifiedIcon} />
@@ -197,12 +212,23 @@ const Review = ({
             <div className={styles.divPadding}>
               <div className={styles.divFlexRow}>
                 <div style={{ marginTop: 5 }}>
-                  <Avatar size={64} src={<Image src={review2} />} />
+                  <Avatar
+                    size={64}
+                    src={
+                      <Image
+                        src={"/images/Avatar.png"}
+                        width={100}
+                        height={100}
+                        alt="me"
+                        layout="fill"
+                      />
+                    }
+                  />
                 </div>
                 <div style={{ marginLeft: 20 }}>
                   <div className={styles.divFlexRow}>
                     <div>
-                      <p className={styles.mainText}>Abdul Basit Memon</p>
+                      <p className={styles.mainText}>Ibrahim Memon</p>
                     </div>
                     <div>
                       <CheckCircleFilled className={styles.verifiedIcon} />

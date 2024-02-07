@@ -52,11 +52,11 @@ class Map extends Component {
       plotOptions: {
         series: {
           point: {
-            events: {
-              click: function () {
-                alert(this.name);
-              },
-            },
+            // events: {
+            //   click: function () {
+            //     alert(this.name);
+            //   },
+            // },
           },
         },
       },
